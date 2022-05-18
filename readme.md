@@ -8,6 +8,7 @@
 <h3>Deploy</h3>
 <p>- Caso esteja em um ambiente com docker, o deploy de aplicação se da através do arquivo <a>run.sh</a></p>
 <p>- Usando o comando </p>
+
 ```
 bash run.sh
     or
