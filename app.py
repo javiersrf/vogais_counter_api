@@ -14,7 +14,7 @@ def count_vogals(element:str):
     return len(p)
 
 
-@app.route("/", methods = ["POST"])
+@app.route("/")
 def vogal_route():
     return "<h1>Bem vindo à api do javier!</h1>"
 
@@ -43,4 +43,4 @@ def main_route():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=8080)

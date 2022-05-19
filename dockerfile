@@ -1,6 +1,5 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
 COPY . .
 COPY requirements.txt /tmp/requirements.txt
 RUN python3 -m pip install -r /tmp/requirements.txt
-RUN ln -fs /usr/share/zoneinfo/America/Belem /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
