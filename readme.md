@@ -17,4 +17,4 @@ bash run.sh
 
 <h3>Configurações</h3>
 <p>- Versão do python utilizada: 3.8</p>
-<p>- Porta padrão do docker-compose : 5000</p>
+<p>- Porta padrão do container docker: 5000</p>
